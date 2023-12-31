@@ -1,0 +1,180 @@
+body {
+    text-align: center;
+    padding: 0%;
+    padding-top: 0%;
+}
+
+p {
+    padding: 0%;
+    margin: 0%;
+}
+
+hr {
+    margin: 0%;
+    margin-bottom: 3%;
+}
+
+.eboard-members{
+    background-color: grey;
+}
+.active-members {
+    background-color: beige;
+}
+.alumni-members {
+    background-color: green;
+}
+
+/*Everything dealing with the Gallery*/
+.gallery-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    margin-bottom: 0%;
+}
+.gallery {
+    padding: 5px;
+    display: flex;
+    overflow-x: scroll;
+    
+    gap: 10px; /* Adjust the gap between flip containers */
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+} 
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+#backBtn {
+    transform: rotate(180deg);
+} 
+/*End of the Gallery*/
+
+/*Dealing with the Card's themselves*/
+.card { 
+    perspective: 800px;
+    width: 20vw;
+    height: 60vh;
+    padding: 10px;
+    position: relative;
+    flex: none;
+    grid-template-columns: auto auto auto;
+}
+.card:hover .card-flipper {
+    transform: rotateY(180deg);
+}
+.card-flipper {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card-front, .card-back {
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    /* border-top-right-radius: 10px; */
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+}
+.card-front {
+    z-index: 2;
+    /* background: red; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-between;
+} 
+.card-back {
+    transform: rotateY(180deg);
+    /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.card-front-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.card-front-content p {
+    margin: 3px;
+    text-align: justify;
+}
+.card-front img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.card-back img {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+}
+.card-back-content {
+    /* padding: 2vw;  */
+    box-sizing: border-box;
+    width:95%;
+    height: 80%;
+    overflow: auto;
+}
+.card-back-content {
+    /* padding: 2vw;  */
+    box-sizing: border-box;
+    width:95%;
+    height: 80%;
+    overflow: auto;
+}
+.card-back-content p {
+    margin: 25px;
+    text-align: justify;
+}
+/* .card-back-content::-webkit-scrollbar{
+    display: none;
+} */
+/*End of dealing with the Card's*/
+
+.navbar-header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    padding: 1%;
+    overflow: hidden;
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+
+}
+.navbar-header li {
+    flex: 1;
+    background-color: white;
+}
+
+.navbar-header li.active {
+    background-color: #4CAF50;
+}
+.navbar-header a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
