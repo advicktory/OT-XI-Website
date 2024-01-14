@@ -222,13 +222,12 @@ ul {
 .navbar-header ul {
   top: 0;
   margin: 0%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
-  border-bottom: blue;
-  border-bottom-style: solid;
   background-color: white;
   z-index: 3;
 }
@@ -289,6 +288,7 @@ ul {
   grid-column-end: 3;
 }
 .top-banner-content h1 {
+  margin: 0%;
   color: rgba(242, 232, 198, 0.9);
   /* font-size: 100%; */
   text-align: center;
