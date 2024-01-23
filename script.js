@@ -12,8 +12,8 @@ function setupHoverEffect(card) {
     const deltaX = clientX - cardCenterX;
     const deltaY = clientY - cardCenterY;
 
-    const angleX = (deltaY / cardCenterY) * 20; // Adjust the multiplier for the desired rotation speed
-    const angleY = -(deltaX / cardCenterX) * 20;
+    const angleX = (deltaY / cardCenterY) * 40; // Adjust the multiplier for the desired rotation speed
+    const angleY = -(deltaX / cardCenterX) * 40;
 
     cardContent.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
   });
