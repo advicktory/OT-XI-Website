@@ -1,7 +1,30 @@
 // Function to set up hover effect for cards
+document.addEventListener("DOMContentLoaded", function () {
+  const navMenu = document.querySelector(".navMenu");
+  const dot = document.querySelector(".dot");
+
+  navMenu.addEventListener("mouseover", (event) => {
+    if (event.target.tagName === "A") {
+      const linkRect = event.target.getBoundingClientRect();
+      const linkCenterX = linkRect.left + linkRect.width / 2 - 3; //Subtracting 3px (1/2 width of dot) to ensure that the dot is centered under the link.
+      const linkUnder = linkRect.height * 0.8;
+
+      // console.log("Center: ", linkCenterX);
+      // console.log("Left: ", linkRect.left);
+      // console.log("Width: ", linkRect.width);
+
+      dot.style.transform = `translateX(${linkCenterX}px) translateY(${linkUnder}px)`;
+      dot.style.opacity = 1;
+    }
+  });
+
+  navMenu.addEventListener("mouseout", () => {
+    dot.style.opacity = 0;
+  });
+});
+
 function setupHoverEffect(card) {
   const cardContent = card.querySelector(".ot-pillers-card-content");
-
   card.addEventListener("mousemove", (e) => {
     const { clientX, clientY } = e;
 
@@ -9,17 +32,32 @@ function setupHoverEffect(card) {
     const cardCenterX = cardRect.left + cardRect.width / 2;
     const cardCenterY = cardRect.top + cardRect.height / 2;
 
+    const x = clientX - cardRect.left;
+    const y = clientY - cardRect.top;
+
     const deltaX = clientX - cardCenterX;
     const deltaY = clientY - cardCenterY;
 
-    const angleX = (deltaY / cardCenterY) * 40; // Adjust the multiplier for the desired rotation speed
-    const angleY = -(deltaX / cardCenterX) * 40;
+    const angleX = (deltaY / cardCenterY) * 15; // Adjust the multiplier for the desired rotation speed
+    const angleY = -(deltaX / cardCenterX) * 15;
+
+    const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
 
     cardContent.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
+
+    cardContent.style.boxShadow = `
+    ${deltaX / 20}px 
+    ${deltaY / 30}px 
+    ${distance / 20}px
+    rgba(0, 0, 0, 0.4)`;
+
+    cardContent.style.setProperty("--x", x + "px");
+    cardContent.style.setProperty("--y", y + "px");
   });
 
   card.addEventListener("mouseout", () => {
     cardContent.style.transform = "rotateX(0) rotateY(0)";
+    cardContent.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.2)";
   });
 }
 
@@ -49,23 +87,4 @@ nextBtn.addEventListener("click", () => {
 backBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
   scrollContainer.scrollLeft -= 500;
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Get the current page filename
-  var currentPage = window.location.pathname.split("/").pop();
-
-  // Remove leading slash if present
-  if (currentPage.charAt(0) === "/") {
-    currentPage = currentPage.slice(1);
-  }
-
-  // Find the corresponding link and add the 'active' class
-  var navLinks = document.querySelectorAll("nav a");
-  navLinks.forEach(function (link) {
-    var linkPage = link.getAttribute("href").split("/").pop();
-    if (linkPage === currentPage) {
-      link.parentNode.classList.add("active");
-    }
-  });
 });

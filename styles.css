@@ -1,19 +1,25 @@
-/*Colors: #952323, A73121, DAD4B5, F2E8C6*/
+/*Colors: #952323 rgb(149, 35, 35), A73121 rgb(167,49,33), DAD4B5 rgb(218, 212, 181), F2E8C6 rgb(242,232,198)*/
 
 /* @import url("https://fonts.google.com/specimen/Moirai+One"); */
 /* @import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@700&family=Forum&family=Lilita+One&family=Mochiy+Pop+One&family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html,
 body {
-  height: 100%;
-
   padding: 0%;
   margin: 0%;
 }
 body {
   display: flex;
   flex-direction: column;
+
   /* justify-content: center; */
   /* text-align: center; */
   /* height: 100%; */
@@ -24,21 +30,21 @@ p {
   margin: 0%;
 }
 
-hr {
-  margin: 5%;
-  /* margin-bottom: 3%; */
-}
+/* hr { */
+/*   margin: 5%; */
+/*   /* margin-bottom: 3%; */
+/* } */
 ul {
   padding: 0%;
   margin: 0%;
 }
 
-.members {
-  /* margin-left: 2%; */
-  /* margin-right: 2%; */
-  margin-top: 4%;
-  /* padding: 1%; */
-}
+/* .members { */
+/*   margin-left: 2%; */
+/*   margin-right: 2%; */
+/*   margin-top: 4%; */
+/*   padding: 1%; */
+/* } */
 
 .eboard-members,
 .active-members,
@@ -215,61 +221,8 @@ ul {
   margin: 25px;
   text-align: justify;
 }
-/* .card-back-content::-webkit-scrollbar{
-    display: none;
-} */
-/*End of dealing with the Card's*/
+/*End of card content*/
 
-.navbar-header {
-  position: fixed;
-  height: 5vh;
-  width: 100%;
-}
-.navbar-header ul {
-  top: 0;
-  margin: 0%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  background-color: white;
-  z-index: 3;
-}
-.navbar-header li {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  background-color: white;
-}
-.navbar-header li:hover {
-  flex: 1;
-  background-color: grey;
-}
-.navbar-header li.active {
-  background-color: #4caf50;
-}
-.navbar-header a {
-  display: block;
-  width: 100%;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.main-container {
-  display: flex;
-  /* justify-content: center; */
-  flex-direction: column;
-  height: 150vh;
-  margin-top: 4vh;
-  /* padding-top: 10vh; */
-  /* flex-grow: 1; */
-}
 .ot-top-banner-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -277,7 +230,7 @@ ul {
   /* height: 100px; */
   /* border: black; */
   /* border-style: solid; */
-  height: 150vh;
+  height: 75vh;
   width: 100%;
   background-image: url(images/letter_infront_kyle.jpeg);
   background-attachment: fixed;
@@ -323,11 +276,51 @@ ul {
   font-size: 3vw;
   /* text-stroke: 2px black; /* Standard syntax */
 }
+
+/*Start of Navbar taken from the internet*/
+.navMenu {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navMenu a {
+  color: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 1vw;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+  text-shadow: 0 0 1px #952323;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  /* top: 50%; */
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
+}
+/*End of NavBar taken from internet*/
+
 .ot-pillers-card-container {
   display: flex;
   justify-content: space-around; /* Adjust this property based on your layout preferences */
   align-items: center;
-  height: 200vh;
+  height: 60vh;
 }
 
 .ot-pillers-card {
@@ -335,7 +328,6 @@ ul {
   width: 300px;
   height: 400px;
   perspective: 1000px;
-
   margin-right: 20px; /* Add margin between cards */
   /* border: 2px solid #3498db; Add a border to the card */
   /* border-style: solid; */
@@ -345,29 +337,74 @@ ul {
 
 .ot-pillers-card-content {
   position: absolute;
+
+  backdrop-filter: blur(10px);
+
   width: 100%;
   height: 100%;
-  background-color: #3498db;
-  color: #fff;
+  padding: 2vw;
+
+  text-align: justify;
+  /* font-size: 1vw; */
+  justify-content: right;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   transform-style: preserve-3d;
+
+  /* background: rgba( */
+  /*   52, */
+  /*   152, */
+  /*   219, */
+  /*   0.7 */
+  /* ); /* Overlay color with alpha transparency */
   transition: transform 0.5s;
+  backdrop-filter: blur(10px);
   box-sizing: border-box; /* Include the border in the total width and height */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ot-pillers-card-content::before {
+  --size: 0;
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(
+    closest-side,
+    rgba(167, 49, 33, 0.2),
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.5s ease,
+    height 0.5s ease;
+}
+
+.ot-pillers-card-content:hover::before {
+  --size: 1000px;
 }
 
 .ot-pillers-card:hover .ot-pillers-card-content {
-  transform: rotateX(-40deg);
+  transform: rotateX(-10deg);
+  /* box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px; /* Larger shadow on hover */
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
 }
 
 .ot-purpose-container {
   /* margin: 5vh; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding: 7vh;
-  height: 50vh;
+  /* padding: 7vh; */
+  height: 25vh;
   /* background-image: url(https://www.kappathetatau.org/assets/imgs/posts/thetatau-history.jpg); */
 
   background-attachment: fixed;
@@ -375,16 +412,17 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-position-x: 50%;
-  background-position-y: 550%;
-  background-size: 120%;
+  background-position-y: 120%;
+  background-size: 50%;
   /* background-color: rgba(149, 35, 35, 0.2); */
 }
 .ot-purpose-content {
+  /* height: 100%; */
   padding: 2vw;
   z-index: 3;
   grid-column-start: 3;
   grid-column-end: 6;
   color: #f2e8c6;
-  background-color: rgba(149, 35, 35, 0.9);
+  background-color: rgba(149, 35, 35, 0.95);
   /* background-color: rgba(red, green, blue, alpha); */
 }
