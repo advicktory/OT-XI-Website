@@ -392,6 +392,8 @@ ul {
   border-radius: 3%;
   overflow: hidden;
 
+  background-color: #500000;
+
   transform-style: preserve-3d;
   transition: transform 0.5s;
   backdrop-filter: blur(10px);
