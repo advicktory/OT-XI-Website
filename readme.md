@@ -1,0 +1,28 @@
+<h1>Howdy!</h1>
+<p> If you are reading this it is because you are looking to help either develop or maintain this site. Which cool thanks for helping! However, a couple of things to mention before you go messing with anything.</p>
+<ul>
+    <li>If you don't know how to use git, please watch this <a href="">THIS</a> video. This will gt least give you enough to know how to not break the site.</li>
+    <li>Ideally, the goal of the site is to look not ancient. Please try and spend some time on the CSS to make it look good. I don't care if nothing matches, just make it look cool and good.</li>
+    <li>For now the most likely place this site will go is here on github. There isn't a need to put it on a AWS Cluster if it's static. Please don't go making crazy server calls or like sign in stuff yet.</li>
+</ul>
+<br/>
+<h2>With that said, here is the details for the site</h2>
+<p>There is at least 4 pages: </p>
+<ul>
+    <li>Home & Rush</li>
+    <li>Actives & Alumni Pictures</li>
+    <li>Hisotry, FAQ, & Alumni Companies</li>
+    <li>Contact Us & Social Tree</li>
+</ul>
+<p>'Home' is a little to barron to just be a '3 pillers', our chapter, and purpose. Condensing it would be a good way fill room. The actives/alumni pictures I was cooking something 
+    (and sill am, I was just inspired in other places first) but if you have a better idea cool. If you wanna help me, check out my eboard photo once you have the project open on your side.
+    History and Contact is barron. Feel free to do whatever styles you want there.
+</p>
+<h2>What needs to be done:</h2>
+<ul>
+    <li>All 4 of the pages</li>
+    <li>Footer</li>
+    <li>Ensuring that the navbar is everywhere.</li>
+    <li>Having someone check to see if information is correct.</li>
+</ul>
+<p>Someone update the list when you complete the feature. Also, use it to add more stuff to the list as needed.</p>
