@@ -66,38 +66,38 @@ ul {
 .eboard-members .gallery-wrapper {
   background-position: center;
   background-size: cover;
-  background-image: url(images/redswirl.jpg);
+  /* background-image: url(images/redswirl.jpg); */
   /* background-image: url(https://pngtree.com/freebackground/a-red-swirl-pattern-on-a-white-surface_12959138.html); */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .eboard-members .gallery {
   /* height: 100%; */
   background-position: center;
   background-size: cover;
   /* background-image: url(images/acdc.jpeg); */
-  background-color: #952323;
-  background-attachment: fixed;
+  /* background-color: #952323; */
+  /* background-attachment: fixed; */
 }
 
-.active-members {
-  /* padding: 1%; */
-  background-color: beige;
-}
+/* .active-members { */
+/*   /* padding: 1%; */
+/*   background-color: beige; */
+/* } */
 .active-members .pledge-semester-fall-2019 .gallery {
   background-position: center;
   background-size: cover;
-  background-image: url(images/dario-banner.jpeg);
+  /* background-image: url(images/dario-banner.jpeg); */
   background-attachment: fixed;
 }
 
-.alumni-members {
-  /* padding: 1%; */
-  background-color: green;
-}
+/* .alumni-members { */
+/*   /* padding: 1%; */ 
+/*   background-color: green; */
+/* } */
 .alumni-members .pledge-semester-fall-xxxx .gallery {
   background-position: center;
   background-size: cover;
-  background-image: url(images/brodie-banner.jpeg);
+  /* background-image: url(images/brodie-banner.jpeg); */
   background-attachment: fixed;
 }
 
@@ -122,7 +122,7 @@ ul {
   gap: 10px; /* Adjust the gap between flip containers */
 }
 
-.gallery::-webkit-scrollbar {
+/* .gallery::-webkit-scrollbar { */
   display: none;
 }
 #backBtn,
