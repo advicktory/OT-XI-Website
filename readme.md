@@ -7,12 +7,12 @@
 </ul>
 <br/>
 <h2>With that said, here is the details for the site</h2>
-If you are gonna make a new change please make a new branch and not push straight to main. Best practice is to name the branch the name of the feature that you are trying to push. Something like `footer-branch` is a good one. If not, name it your name `<your name>dev-branch` or something similar.
+<p>If you are gonna make a new change please make a new branch and not push straight to main. Best practice is to name the branch the name of the feature that you are trying to push. Something like `footer-branch` is a good one. If not, name it your name `<your name>dev-branch` or something similar.</p>
 
 <p>There is at least 4 pages: </p>
 <ul>
     <li>Home & Rush</li>
-    <li>Actives & Alumni Pictures</li>
+    <li>Actives & Alumni Pictures (it would be nice to have a photos of our alumni on the page.</li>
     <li>Hisotry, FAQ, & Alumni Companies</li>
     <li>Contact Us & Social Tree</li>
 </ul>
@@ -29,6 +29,10 @@ If you are gonna make a new change please make a new branch and not push straigh
     <li>We will be using github pages for static site hosting. Domain will be tied in later.</li>
 </ul>
 <p>Someone update the list when you complete the feature. Also, use it to add more stuff to the list as needed.</p>
-## What is done:
-* The navigation bar is complete, it just needs to be transferred to the other pages.
-* The home page is actively being worked on and will be completed before the first day of school.
+<h2>What is done</h2>
+<ul>
+    <li>The navigation bar is complete, it just needs to be transferred to the other pages.</li>
+    <li>The home page is actively being worked on and will be completed before the first day of school.</li>
+</ul>
+
+
