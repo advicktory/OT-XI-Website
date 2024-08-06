@@ -20,9 +20,10 @@
     <p>History and Contact is barron. Feel free to do whatever styles you want there.</p>
 <h2>What needs to be done:</h2>
 <ul>
-    <li>All 4 of the pages</li>
+    <li>3/4 of the pages</li>
     <li>Footer</li>
     <li>Ensuring that the navbar is everywhere.</li>
     <li>Having someone check to see if the information is correct.</li>
+    <li>We will be using github pages for static site hosting. Domain will be tied in later.</li>
 </ul>
 <p>Someone update the list when you complete the feature. Also, use it to add more stuff to the list as needed.</p>
