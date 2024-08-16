@@ -31,10 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
   let lastScrollTop = 0;
 
   window.addEventListener("scroll", function () {
-    const currentScrollTop =
-      window.pageYOffset || document.documentElement.scrollTop;
+    const currentScrollTop = document.documentElement.scrollTop;
 
-    if (currentScrollTop > lastScrollTop) {
+    if (currentScrollTop > 25) {
       // User is scrolling down
       navbar.classList.add("hidden");
     } else {
