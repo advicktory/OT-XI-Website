@@ -265,7 +265,7 @@ ul {
 .ot-landing-navbar.hidden {
   height: 4vh;
   position: fixed;
-  background-color: rgba(199, 200, 204, 0.98);
+  background-color: #414856;
 
   a {
     height: 100%;
@@ -844,7 +844,7 @@ ul {
   box-shadow: 0 30px 60px rgba(65, 72, 86, 0.9);
   padding: 1vw 1vh;
 
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .ot-rush-item {
   height: 35vh;
@@ -949,6 +949,7 @@ ul {
   width: fit-content;
   justify-content: center;
   transition: color 0.3s ease;
+  font-family: "Oswald", sans-serif;
 }
 #checklist label::before,
 #checklist label::after {
@@ -1152,8 +1153,20 @@ ul {
 }
 
 .ot-footer {
-  height: 10vh;
+  height: 30vh;
   width: 100%;
+  padding: 3vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.ot-footer-item {
+  width: 40vw;
+}
+.ot-footer-item-title {
+  text-align: center;
 }
 /* End of Home Page CSS*/
 
