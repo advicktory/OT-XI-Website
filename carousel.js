@@ -96,8 +96,8 @@ const activeMembers = [
 ];
 
 const alumniMembers = [
-    { name: 'Charlie Brown', major: 'Civil Engineering', graduated: '2022', pinNumber: '005', frontImage: 'path/to/front-image5.jpg', backImage: 'path/to/back-image5.jpg' },
-    { name: 'Diana Prince', major: 'Aerospace Engineering', graduated: '2021', pinNumber: '006', frontImage: 'path/to/front-image6.jpg', backImage: 'path/to/back-image6.jpg' },
+    { name: 'Charlie Brown', major: 'Civil Engineering', class: '2022', pinNumber: '005', frontImage: 'path/to/front-image5.jpg', backImage: 'path/to/back-image5.jpg' },
+    { name: 'Diana Prince', major: 'Aerospace Engineering', class: '2021', pinNumber: '006', frontImage: 'path/to/front-image6.jpg', backImage: 'path/to/back-image6.jpg' },
     // Add more members...
 ];
 
