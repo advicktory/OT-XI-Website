@@ -138,6 +138,20 @@ ul {
   transform: rotate(180deg);
 }
 
+.section-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  /* Adjust as needed */
+}
+
+.section-title h2 {
+  font-size: 2em;
+  color: #500000;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+
 /*End of the Gallery*/
 
 /*Dealing with the Card's themselves*/
