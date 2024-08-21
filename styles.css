@@ -56,15 +56,6 @@ ul {
 *
 *
 * */
-.eboard-members,
-.active-members,
-.alumni-members {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
 .eboard-members .gallery-wrapper {
   background-position: center;
   background-size: cover;
@@ -141,7 +132,6 @@ ul {
 .section-title {
   text-align: center;
   width: 100%;
-  margin-bottom: 20px;
   /* Adjust as needed */
 }
 
