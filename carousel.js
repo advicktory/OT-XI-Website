@@ -84,16 +84,20 @@ class Carousel {
 // Sample data (you'll need to replace this with your actual member data)
 const eboardMembers = [
     { name: 'John Doe', position: 'President', major: 'Computer Science', class: '2024', pinNumber: '001', frontImage: 'path/to/front-image.jpg', backImage: 'path/to/back-image.jpg' },
+    { name: 'Jane Smith', position: 'Vice President', major: 'Electrical Engineering', class: '2024', pinNumber: '002', frontImage: 'path/to/front-image2.jpg', backImage: 'path/to/back-image2.jpg' },
+    { name: 'Alice Johnson', major: 'Mechanical Engineering', class: '2025', pinNumber: '003', frontImage: 'path/to/front-image3.jpg', backImage: 'path/to/back-image3.jpg' },
     // Add more members...
 ];
 
 const activeMembers = [
-    { name: 'Jane Smith', major: 'Electrical Engineering', class: '2025', pinNumber: '002', frontImage: 'path/to/front-image.jpg', backImage: 'path/to/back-image.jpg' },
+    { name: 'Alice Johnson', major: 'Mechanical Engineering', class: '2025', pinNumber: '003', frontImage: 'path/to/front-image3.jpg', backImage: 'path/to/back-image3.jpg' },
+    { name: 'Bob Williams', major: 'Chemical Engineering', class: '2025', pinNumber: '004', frontImage: 'path/to/front-image4.jpg', backImage: 'path/to/back-image4.jpg' },
     // Add more members...
 ];
 
 const alumniMembers = [
-    { name: 'Bob Johnson', major: 'Mechanical Engineering', graduated: '2022', pinNumber: '003', frontImage: 'path/to/front-image.jpg', backImage: 'path/to/back-image.jpg' },
+    { name: 'Charlie Brown', major: 'Civil Engineering', graduated: '2022', pinNumber: '005', frontImage: 'path/to/front-image5.jpg', backImage: 'path/to/back-image5.jpg' },
+    { name: 'Diana Prince', major: 'Aerospace Engineering', graduated: '2021', pinNumber: '006', frontImage: 'path/to/front-image6.jpg', backImage: 'path/to/back-image6.jpg' },
     // Add more members...
 ];
 
