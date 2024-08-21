@@ -262,6 +262,31 @@ ul {
   right: 10px;
 }
 
+.nav-arrow {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-container .nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-container .nav-arrow.prev-arrow {
+  left: 10px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.carousel-container .nav-arrow:not(.prev-arrow) {
+  right: 10px;
+}
+
 /*End of card content
 *
 *
