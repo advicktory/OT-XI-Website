@@ -35,6 +35,7 @@ body {
     justify-content: center;
     align-items: center;
   }
+
   a:hover {
     border: 1px solid black;
     background-color: rgba(125, 10, 10, 0.8);
@@ -99,7 +100,8 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.5s;
   backdrop-filter: blur(10px);
-  box-sizing: border-box; /* Include the border in the total width and height */
+  box-sizing: border-box;
+  /* Include the border in the total width and height */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
   /* background-color: rgba(238, 235, 182, 0.6); */
@@ -132,11 +134,9 @@ body {
   top: var(--y);
   width: var(--size);
   height: var(--size);
-  background: radial-gradient(
-    closest-side,
-    rgba(137, 32, 52, 0.75),
-    transparent
-  );
+  background: radial-gradient(closest-side,
+      rgba(137, 32, 52, 0.75),
+      transparent);
   transform: translate(-50%, -50%);
   transition:
     width 0.5s ease,
@@ -151,5 +151,6 @@ body {
   transform: rotateX(-10deg);
   /* box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px; /* Larger shadow on hover */
 
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  /* Larger shadow on hover */
 }

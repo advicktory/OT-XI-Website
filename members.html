@@ -1,137 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flipping Photo</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="ot-landing-navbar">
-      <ul class="ot-landing-navbar-links">
-        <a href="https://thetatau.org"
-          ><img
-            src="./images/Icons/Theta Tau Shield.png"
-            alt="Logo of theta tau"
-            style="width: 15%; height: 90%"
-        /></a>
 
-        <a href="./thetatau.html"
-          ><img src="./images/Icons/Home icon.svg" alt=""
-        /></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theta Tau Members</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-        <a href="./members.html"
-          ><img src="./images/Icons/actives.svg" alt=""
-        /></a>
-
-        <a href="./history.html"
-          ><img src="./images/Icons/question.svg" alt=""
-        /></a>
-        <a href="./contact.html"
-          ><img src="./images/Icons/contact.svg" alt=""
-        /></a>
-        <div class="dot"></div>
+<body>
+  <div class="ot-landing-navbar">
+    <div class="ot-landing-navbar-links">
+      <div class="ot-landing-navbar-logo">
+        <img src="images/rush-flyers/ot_letter.svg" alt="The offcial letters of theta tau" />
+      </div>
+      <div class="ot-landing-navbar-spacer"></div>
+      <ul>
+        <li><a href="thetatau.html">Home & Rush</a></li>
+        <li><a href="members.html">Members & Alumni</a></li>
+        <li><a href="history.html">History/FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
-    <div class="members">
-      <div class="eboard-members">
-        <p>Eboard: Spring 2024</p>
-        <div class="gallery-wrapper">
-          <img src="images/next.png" id="backBtn" />
-          <div class="gallery">
-            <div class="card">
-              <div class="card-flipper">
-                <div class="card-front">
-                  <img src="images/img_1226.jpeg" />
-                  <div class="card-front-content">
-                    <p>Name: Adam Vick</p>
-                    <p>Fraternity Positon: Regent</p>
-                    <p>Major: Computer Engineering</p>
-                    <p>Class: '24!</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <img src="images/img_1395.jpeg" />
-                  <div class="card-back-content">
-                    <p>Pin #: 290</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--End of Eboard Gallery-->
-          <img src="images/next.png" id="nextBtn" />
-        </div>
-      </div>
+    <div class="dot"></div>
+  </div>
 
-      <!-- End of Eboard Members -->
-      <hr />
-      <div class="active-members">
-        <div class="pledge-semester-fall-2019">
-          <p>Actives: Pledge Semester Fall 2019</p>
-          <div class="gallery-wrapper">
-            <img src="images/next.png" id="backBtn" />
-            <div class="gallery">
-              <div class="card">
-                <div class="card-flipper">
-                  <div class="card-front">
-                    <img src="" />
-                    <div class="card-front-content">
-                      <p>name: xx</p>
-                      <p>fraternity positon: xx</p>
-                      <p>major: xx</p>
-                      <p>class: xx</p>
-                    </div>
-                  </div>
-                  <div class="card-back">
-                    <img src="" />
-                    <div class="card-back-content">
-                      <p>xx</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img src="images/next.png" id="nextBtn" />
-          </div>
-        </div>
+  <div class="members">
+    <div class="eboard-members">
+      <div class="section-title">
+        <h2>Executive Board</h2>
       </div>
-      <!-- End of Active Members-->
-
-      <hr />
-      <div class="alumni-members">
-        <div class="pledge-semester-fall-xxxx">
-          <p>Actives: Pledge Semester Fall XXXX</p>
-          <div class="gallery-wrapper">
-            <img src="images/next.png" id="backBtn" />
-            <div class="gallery">
-              <div class="card">
-                <div class="card-flipper">
-                  <div class="card-front">
-                    <img src="" />
-                    <div class="card-front-content">
-                      <p>name: xx</p>
-                      <p>fraternity positon: xx</p>
-                      <p>major: xx</p>
-                      <p>class: xx</p>
-                    </div>
-                  </div>
-                  <div class="card-back">
-                    <img src="" />
-                    <div class="card-back-content">
-                      <p>xx</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img src="images/next.png" id="nextBtn" />
-          </div>
+      <div class="carousel-container">
+        <button class="carousel-nav prev"><img src="images/next.png" alt="Previous"
+            class="nav-arrow prev-arrow"></button>
+        <div class="carousel-content">
+          <!-- Carousel items will be dynamically added here -->
         </div>
+        <button class="carousel-nav next"><img src="images/next.png" alt="Next" class="nav-arrow"></button>
       </div>
-      <!-- End of Alumni Members-->
     </div>
 
-    <script src="./script.js"></script>
-  </body>
+    <div class="active-members">
+      <div class="section-title">
+        <h2>Actives</h2>
+      </div>
+      <div class="carousel-container">
+        <button class="carousel-nav prev"><img src="images/next.png" alt="Previous"
+            class="nav-arrow prev-arrow"></button>
+        <div class="carousel-content">
+          <!-- Carousel items will be dynamically added here -->
+        </div>
+        <button class="carousel-nav next"><img src="images/next.png" alt="Next" class="nav-arrow"></button>
+      </div>
+    </div>
+
+    <div class="alumni-members">
+      <div class="section-title">
+        <h2>Alumni</h2>
+      </div>
+      <div class="carousel-container">
+        <button class="carousel-nav prev"><img src="images/next.png" alt="Previous"
+            class="nav-arrow prev-arrow"></button>
+        <div class="carousel-content">
+          <!-- Carousel items will be dynamically added here -->
+        </div>
+        <button class="carousel-nav next"><img src="images/next.png" alt="Next" class="nav-arrow"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="carousel.js"></script>
+</body>
+
 </html>
